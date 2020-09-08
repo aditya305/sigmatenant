@@ -81,10 +81,10 @@ class _MyHomePageState extends State<MyHomePage> {
               return ListView.builder(
                 shrinkWrap: true,
                 itemCount: contentData.length,
-                padding: EdgeInsets.all(17.0),
+                padding: EdgeInsets.all(20.0),
                 itemBuilder: (context, int index) {
                   return Padding(
-                    padding: const EdgeInsets.all(8.0),
+                    padding: const EdgeInsets.all(15.0),
                     child: AnimatedContainer(
                       color: Colors.white,
                       duration: Duration(
@@ -92,75 +92,79 @@ class _MyHomePageState extends State<MyHomePage> {
                       ),
                       child: Container(
                         decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(10.0),
+                          borderRadius: BorderRadius.circular(7.0),
                           color: Colors.white,
                           boxShadow: [
                             BoxShadow(
                               color: Colors.grey,
                               offset: Offset(0.0, 1.0), //(x,y)
-                              blurRadius: 6.0,
+                              blurRadius: 3.0,
                             ),
                           ],
                         ),
                         padding: EdgeInsets.all(10.0),
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            SizedBox(
-                              height: 5.0,
-                            ),
-                            Container(
-                              padding: EdgeInsets.all(7.0),
-                              child: Text(
-                                contentData[index].displayName ?? "",
-                                style: TextStyle(
-                                  color: Colors.pink,
-                                  fontWeight: FontWeight.bold,
-                                ),
+                        child: Padding(
+                          padding: const EdgeInsets.all(10.0),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              SizedBox(
+                                height: 5.0,
                               ),
-                              decoration: BoxDecoration(
-                                color: Colors.white,
-                                boxShadow: [
-                                  BoxShadow(
-                                    color: Colors.grey,
-                                    offset: Offset(0.0, 1.0), //(x,y)
-                                    blurRadius: 6.0,
+                              Container(
+                                padding: EdgeInsets.all(7.0),
+                                child: Text(
+                                  contentData[index].displayName ?? "",
+                                  style: TextStyle(
+                                    color: Color(0xffa63d66),
+                                    fontWeight: FontWeight.bold,
                                   ),
-                                ],
-                              ),
-                            ),
-                            SizedBox(
-                              height: 10.0,
-                            ),
-                            Container(
-                              child: Text(
-                                contentData[index].tags ?? "",
-                                style: TextStyle(
-                                  color: Colors.black,
-                                  fontWeight: FontWeight.bold,
+                                ),
+                                decoration: BoxDecoration(
+                                  color: Colors.white,
+                                  borderRadius: BorderRadius.circular(5.0),
+                                  boxShadow: [
+                                    BoxShadow(
+                                      color: Colors.grey,
+                                      offset: Offset(0.0, 2.0), //(x,y)
+                                      blurRadius: 0.5,
+                                    ),
+                                  ],
                                 ),
                               ),
-                            ),
-                            SizedBox(
-                              height: 10.0,
-                            ),
-                            Container(
-                              child: Text(
-                                contentData[index].description ?? "",
+                              SizedBox(
+                                height: 10.0,
                               ),
-                            ),
-                            SizedBox(
-                              height: 10.0,
-                            ),
-                            Container(
-                              child: Text(
-                                "Saces",
-                                style: TextStyle(
-                                  color: Colors.pink,
+                              Container(
+                                child: Text(
+                                  contentData[index].tags ?? "",
+                                  style: TextStyle(
+                                    color: Colors.black,
+                                    fontWeight: FontWeight.bold,
+                                  ),
                                 ),
                               ),
-                            ),
-                          ],
+                              SizedBox(
+                                height: 10.0,
+                              ),
+                              Container(
+                                child: Text(
+                                  contentData[index].description ?? "",
+                                ),
+                              ),
+                              SizedBox(
+                                height: 10.0,
+                              ),
+                              Container(
+                                child: Text(
+                                  "Spaces",
+                                  style: TextStyle(
+                                    color: Color(0xffa63d66),
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
                         ),
                       ),
                     ),
@@ -174,10 +178,10 @@ class _MyHomePageState extends State<MyHomePage> {
               return ListView.builder(
                 shrinkWrap: true,
                 itemCount: contentData.length,
-                padding: EdgeInsets.all(17.0),
+                padding: EdgeInsets.all(20.0),
                 itemBuilder: (context, int index) {
                   return Padding(
-                    padding: const EdgeInsets.all(8.0),
+                    padding: const EdgeInsets.all(15.0),
                     child: AnimatedContainer(
                       color: Colors.white,
                       duration: Duration(
@@ -185,75 +189,79 @@ class _MyHomePageState extends State<MyHomePage> {
                       ),
                       child: Container(
                         decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(10.0),
+                          borderRadius: BorderRadius.circular(7.0),
                           color: Colors.white,
                           boxShadow: [
                             BoxShadow(
                               color: Colors.grey,
                               offset: Offset(0.0, 1.0), //(x,y)
-                              blurRadius: 6.0,
+                              blurRadius: 3.0,
                             ),
                           ],
                         ),
                         padding: EdgeInsets.all(10.0),
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            SizedBox(
-                              height: 5.0,
-                            ),
-                            Container(
-                              padding: EdgeInsets.all(7.0),
-                              child: Text(
-                                contentData[index].displayName ?? "",
-                                style: TextStyle(
-                                  color: Colors.pink,
-                                  fontWeight: FontWeight.bold,
-                                ),
+                        child: Padding(
+                          padding: const EdgeInsets.all(10.0),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              SizedBox(
+                                height: 5.0,
                               ),
-                              decoration: BoxDecoration(
-                                color: Colors.white,
-                                boxShadow: [
-                                  BoxShadow(
-                                    color: Colors.grey,
-                                    offset: Offset(0.0, 1.0), //(x,y)
-                                    blurRadius: 6.0,
+                              Container(
+                                padding: EdgeInsets.all(7.0),
+                                child: Text(
+                                  contentData[index].displayName ?? "",
+                                  style: TextStyle(
+                                    color: Color(0xffa63d66),
+                                    fontWeight: FontWeight.bold,
                                   ),
-                                ],
-                              ),
-                            ),
-                            SizedBox(
-                              height: 10.0,
-                            ),
-                            Container(
-                              child: Text(
-                                contentData[index].tags ?? "",
-                                style: TextStyle(
-                                  color: Colors.black,
-                                  fontWeight: FontWeight.bold,
+                                ),
+                                decoration: BoxDecoration(
+                                  color: Colors.white,
+                                  borderRadius: BorderRadius.circular(5.0),
+                                  boxShadow: [
+                                    BoxShadow(
+                                      color: Colors.grey,
+                                      offset: Offset(0.0, 2.0), //(x,y)
+                                      blurRadius: 0.5,
+                                    ),
+                                  ],
                                 ),
                               ),
-                            ),
-                            SizedBox(
-                              height: 10.0,
-                            ),
-                            Container(
-                              child: Text(
-                                contentData[index].description ?? "",
+                              SizedBox(
+                                height: 10.0,
                               ),
-                            ),
-                            SizedBox(
-                              height: 10.0,
-                            ),
-                            Container(
-                              child: Text(
-                                "Saces",
-                                style: TextStyle(
-                                  color: Colors.pink,
+                              Container(
+                                child: Text(
+                                  contentData[index].tags ?? "",
+                                  style: TextStyle(
+                                    color: Colors.black,
+                                    fontWeight: FontWeight.bold,
+                                  ),
                                 ),
                               ),
-                            ),
-                          ],
+                              SizedBox(
+                                height: 10.0,
+                              ),
+                              Container(
+                                child: Text(
+                                  contentData[index].description ?? "",
+                                ),
+                              ),
+                              SizedBox(
+                                height: 10.0,
+                              ),
+                              Container(
+                                child: Text(
+                                  "Spaces",
+                                  style: TextStyle(
+                                    color: Color(0xffa63d66),
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
                         ),
                       ),
                     ),
