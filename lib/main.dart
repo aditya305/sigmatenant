@@ -134,6 +134,18 @@ class _MyHomePageState extends State<MyHomePage> {
                             ),
                             Container(
                               child: Text(
+                                contentData[index].tags ?? "",
+                                style: TextStyle(
+                                  color: Colors.black,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                            ),
+                            SizedBox(
+                              height: 10.0,
+                            ),
+                            Container(
+                              child: Text(
                                 contentData[index].description ?? "",
                               ),
                             ),
@@ -142,8 +154,10 @@ class _MyHomePageState extends State<MyHomePage> {
                             ),
                             Container(
                               child: Text(
-                                contentData[index].tags ?? "",
-                                style: TextStyle(color: Colors.pink),
+                                "Saces",
+                                style: TextStyle(
+                                  color: Colors.pink,
+                                ),
                               ),
                             ),
                           ],
@@ -213,6 +227,18 @@ class _MyHomePageState extends State<MyHomePage> {
                             ),
                             Container(
                               child: Text(
+                                contentData[index].tags ?? "",
+                                style: TextStyle(
+                                  color: Colors.black,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                            ),
+                            SizedBox(
+                              height: 10.0,
+                            ),
+                            Container(
+                              child: Text(
                                 contentData[index].description ?? "",
                               ),
                             ),
@@ -221,8 +247,10 @@ class _MyHomePageState extends State<MyHomePage> {
                             ),
                             Container(
                               child: Text(
-                                contentData[index].tags ?? "",
-                                style: TextStyle(color: Colors.pink),
+                                "Saces",
+                                style: TextStyle(
+                                  color: Colors.pink,
+                                ),
                               ),
                             ),
                           ],
